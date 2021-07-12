@@ -23,14 +23,12 @@ class LocationManager: NSObject, ObservableObject {
         let geofenceRegion = CLCircularRegion(center: geofenceRegionCenter, radius: 80, identifier: "CrazyParc")
         geofenceRegion.notifyOnEntry = true
         
-        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-        //locationManager.stopMonitoring(for: geofenceRegion)
         locationManager.startMonitoring(for: geofenceRegion)
         locationManager.delegate = self
-
     }
     
     private func launchNotifications(notifications: [Notification]) {
@@ -57,7 +55,7 @@ extension LocationManager: CLLocationManagerDelegate {
             isPresentedAlert = true
             
             launchNotifications(notifications: [
-                Notification(id: "geotification-\(region.identifier)", title: "😯 Des oeuvres sont proches de vous", body: "Vous approchez du lieu : \(region.identifier)", triggerDelay: 1),
+                Notification(id: "geotificationin-\(region.identifier)", title: "😯 Des oeuvres sont proches de vous", body: "Vous approchez du lieu : \(region.identifier)", triggerDelay: 1),
             ])
         }
     }
@@ -68,7 +66,7 @@ extension LocationManager: CLLocationManagerDelegate {
             isPresentedAlert = false
             
             launchNotifications(notifications: [
-                Notification(id: "geotification-\(region.identifier)", title: "Vous vous éloignez", body: "Mais quel dommage !", triggerDelay: 1),
+                Notification(id: "geotificationout-\(region.identifier)", title: "Vous vous éloignez", body: "Mais quel dommage !", triggerDelay: 1),
             ])
         }
     }
