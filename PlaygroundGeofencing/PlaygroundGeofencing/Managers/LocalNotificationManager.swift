@@ -39,6 +39,7 @@ class LocalNotificationManager
                 self.requestAuthorization()
             case .authorized, .provisional:
                 self.scheduleNotifications()
+                
             default:
                 break
             }

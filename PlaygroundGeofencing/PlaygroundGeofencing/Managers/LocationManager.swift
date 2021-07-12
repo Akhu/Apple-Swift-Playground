@@ -11,17 +11,19 @@ import SwiftUI
 class LocationManager: NSObject, ObservableObject {
     private let locationManager = CLLocationManager()
     let notificationManager = LocalNotificationManager()
-    private let geofenceRegionCenter = CLLocationCoordinate2DMake(45.90908871425869, 6.104119273581125)
+    private let geofenceRegionCenter = CLLocationCoordinate2DMake(45.90825675728927, 6.103226194101166)
     @Published var location: CLLocation?
+    @Published var isPresentedAlert: Bool = false
     @Published var currentIdentifier: String = ""
     
     override init() {
         super.init()
         
-        let geofenceRegion = CLCircularRegion(center: geofenceRegionCenter, radius: 40, identifier: "Parc de malade")
+        print("init locationManager")
+        let geofenceRegion = CLCircularRegion(center: geofenceRegionCenter, radius: 80, identifier: "CrazyParc")
         geofenceRegion.notifyOnEntry = true
         
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
@@ -48,11 +50,25 @@ extension LocationManager: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        print("i enter in your fucking region")
-        
-        launchNotifications(notifications: [
-            Notification(id: "geotification-\(region.identifier)", title: "😯 Des oeuvres sont proches de vous", body: "Vous approchez du lieu : \(region.identifier)", triggerDelay: 4),
-        ])
+        print(region.identifier)
+        if region.identifier == "CrazyParc" {
+            print("i enter in your fucking region")
+            isPresentedAlert = true
+            
+            launchNotifications(notifications: [
+                Notification(id: "geotification-\(region.identifier)", title: "😯 Des oeuvres sont proches de vous", body: "Vous approchez du lieu : \(region.identifier)", triggerDelay: 1),
+            ])
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        if region.identifier == "CrazyParc" {
+            isPresentedAlert = false
+            
+            launchNotifications(notifications: [
+                Notification(id: "geotification-\(region.identifier)", title: "Vous vous éloignez", body: "Mais quel dommage !", triggerDelay: 1),
+            ])
+        }
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
