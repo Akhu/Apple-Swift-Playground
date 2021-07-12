@@ -27,6 +27,7 @@ class LocationManager: NSObject, ObservableObject {
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
+        //locationManager.stopMonitoring(for: geofenceRegion)
         locationManager.startMonitoring(for: geofenceRegion)
         locationManager.delegate = self
 
@@ -62,6 +63,7 @@ extension LocationManager: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        print(region.identifier)
         if region.identifier == "CrazyParc" {
             isPresentedAlert = false
             
