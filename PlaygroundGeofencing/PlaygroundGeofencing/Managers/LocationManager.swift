@@ -19,7 +19,6 @@ class LocationManager: NSObject, ObservableObject {
     override init() {
         super.init()
         
-        print("init locationManager")
         let geofenceRegion = CLCircularRegion(center: geofenceRegionCenter, radius: 80, identifier: "CrazyParc")
         geofenceRegion.notifyOnEntry = true
         
@@ -51,7 +50,6 @@ extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         print(region.identifier)
         if region.identifier == "CrazyParc" {
-            print("i enter in your fucking region")
             isPresentedAlert = true
             
             launchNotifications(notifications: [
@@ -69,18 +67,5 @@ extension LocationManager: CLLocationManagerDelegate {
                 Notification(id: "geotificationout-\(region.identifier)", title: "Vous vous éloignez", body: "Mais quel dommage !", triggerDelay: 1),
             ])
         }
-    }
-    
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-      let status = manager.authorizationStatus
-              //mapView.showsUserLocation = (status == .authorizedAlways)
-
-      if status != .authorizedAlways {
-        let message = """
-        Your geotification is saved but will only be activated once you grant
-        Geotify permission to access the device location.
-        """
-        //showAlert(withTitle: "Warning", message: message)
-      }
     }
 }
