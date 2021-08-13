@@ -10,6 +10,7 @@ import SwiftUI
 struct InvisibleTappableView: View {
     var body: some View {
         GeometryReader { geometry in
+            
             Color.clear.contentShape(Path(CGRect(origin: .zero, size: geometry.size)))
         }
     }

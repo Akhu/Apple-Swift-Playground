@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIPlaygroundApp: App {
     var body: some Scene {
         WindowGroup {
-            PermissionsWithCombine()
+            MapKitWithLocation()
         }
     }
 }

@@ -7,54 +7,40 @@
 
 import SwiftUI
 import Combine
-
-class PermissionsState: ObservableObject {
-    
-    @Published var permissionStatus : Bool = false
-    
-    private var cancellables = Set<AnyCancellable>()
-    
-    func askForPermissions(){
-        UNUserNotificationCenter.current().getNotificationSettings()
-            .flatMap { settings -> AnyPublisher<Bool, Never> in
-                switch settings.authorizationStatus {
-                case .notDetermined:
-                    return UNUserNotificationCenter.current().requestAuthorization(options: [.alert])
-                        .replaceError(with: false)
-                        .eraseToAnyPublisher()
-                case .denied:
-                    return Just(false).eraseToAnyPublisher()
-                case .authorized:
-                    return Just(true).eraseToAnyPublisher()
-                case .provisional:
-                    return Just(true).eraseToAnyPublisher()
-                case .ephemeral:
-                    return Just(true).eraseToAnyPublisher()
-                @unknown default:
-                    return Just(false).eraseToAnyPublisher()
-                }
-            }.receive(on: DispatchQueue.main)
-            .assign(to: \.permissionStatus, on: self)
-            .store(in: &cancellables)
-        
-    }
-}
+import CoreLocation
+import UserNotifications
 
 struct PermissionsWithCombine: View {
     
-    @StateObject var permissionState = PermissionsState()
+    
+    @StateObject var permissions = Permissions()
     
     var body: some View {
-        Button(action: {
-            permissionState.askForPermissions()
-        }, label: {
-            if permissionState.permissionStatus == false {
-                Text("Ask for Permissions")
-            } else {
-                Text("Permissions Granted !")
+        VStack {
+            Toggle(isOn: $permissions.canLaunch, label: {
+                Text("CanLaunch")
+            }).onChange(of: permissions.canLaunch, perform: { value in
+                permissions.loadPermissions()
+            })
+            Button(action: {
+                if permissions.notificationPermissionState == .denied {
+                    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString + Bundle.main.bundleIdentifier!)!, options: [:], completionHandler: nil)
+                }
+                permissions.askForAllPermissions()
+            }, label: {
+                if permissions.notificationPermissionState != .authorized {
+                    Text("Ask for Permissions")
+                } else {
+                    Text("Permissions Granted !")
+                }
+            }).onAppear {
+                permissions.loadPermissions()
+        }
+            if permissions.canLaunch {
+                Text("LESSSGGOOOOOOO")
             }
             
-        })
+        }
     }
 }
 
@@ -65,18 +51,3 @@ struct PermissionsWithCombine_Previews: PreviewProvider {
 }
 
 
-extension UNUserNotificationCenter {
-    func getNotificationSettings() -> Future<UNNotificationSettings,
-                                             Never> {
-        return Future { promise in
-            self.getNotificationSettings { settings in promise(.success(settings))
-            } }
-    }
-    func requestAuthorization(options: UNAuthorizationOptions) ->
-    Future<Bool, Error> { return Future { promise in
-        self.requestAuthorization(options: options) { result, error in if let error = error {
-            promise(.failure(error)) } else {
-                promise(.success(result))
-            }
-        } }
-    } }

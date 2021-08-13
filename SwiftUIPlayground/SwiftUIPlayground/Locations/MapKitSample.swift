@@ -126,9 +126,9 @@ struct MapExample3: View {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapExample3()
-        MapView()
-        MapExample()
+//        MapExample3()
+//        MapView()
+//        MapExample()
         MapExample2()
     }
 }
