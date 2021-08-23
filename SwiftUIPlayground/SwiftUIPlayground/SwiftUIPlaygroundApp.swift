@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct SwiftUIPlaygroundApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            MapKitWithLocation()
+            NavigationView {
+                VStack {
+                    NavigationLink("Permissions", destination:  PermissionsWithCombine())
+                    NavigationLink("Local Notification Tester", destination:  LocalNotificationView())
+                    NavigationLink("Bottom Sheet", destination:  BottomSheetViewSample())
+                    NavigationLink("Scroll View Fixed Element", destination:  ScrollViewFixedElement())
+                }
+            }
+            
         }
     }
 }

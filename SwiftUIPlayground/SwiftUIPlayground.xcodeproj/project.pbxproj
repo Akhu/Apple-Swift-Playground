@@ -11,6 +11,10 @@
 		928D2B7726C6C08500ABE408 /* MapKitWithLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2B7626C6C08500ABE408 /* MapKitWithLocation.swift */; };
 		928D2B7A26C6C16B00ABE408 /* PermissionsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2B7926C6C16B00ABE408 /* PermissionsExtensions.swift */; };
 		928D2B7D26C6C27400ABE408 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2B7C26C6C27400ABE408 /* Permissions.swift */; };
+		928D2B9C26CAB60F00ABE408 /* LocalNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2B9B26CAB60F00ABE408 /* LocalNotificationView.swift */; };
+		928D2B9E26CAC3FB00ABE408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2B9D26CAC3FB00ABE408 /* AppDelegate.swift */; };
+		928D2BA126CACEB700ABE408 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2BA026CACEB700ABE408 /* NotificationHandler.swift */; };
+		928D2BA326CC28AD00ABE408 /* URLSessionWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2BA226CC28AD00ABE408 /* URLSessionWithCombine.swift */; };
 		92DC16CE26A61D9800DCA9EB /* SwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16CD26A61D9800DCA9EB /* SwiftUIPlaygroundApp.swift */; };
 		92DC16D026A61D9800DCA9EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16CF26A61D9800DCA9EB /* ContentView.swift */; };
 		92DC16D226A61D9900DCA9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DC16D126A61D9900DCA9EB /* Assets.xcassets */; };
@@ -28,6 +32,7 @@
 		92DC16F126A6229B00DCA9EB /* CarouselViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16F026A6229B00DCA9EB /* CarouselViewModifier.swift */; };
 		92DC16F326A622C600DCA9EB /* InvisibleTappableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16F226A622C600DCA9EB /* InvisibleTappableView.swift */; };
 		92DC16F526A6230C00DCA9EB /* CustomProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16F426A6230C00DCA9EB /* CustomProgressViewStyle.swift */; };
+		92E3CE7426D2898D00627309 /* ScrollViewFixedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3CE7326D2898D00627309 /* ScrollViewFixedElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,10 @@
 		928D2B7626C6C08500ABE408 /* MapKitWithLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitWithLocation.swift; sourceTree = "<group>"; };
 		928D2B7926C6C16B00ABE408 /* PermissionsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsExtensions.swift; sourceTree = "<group>"; };
 		928D2B7C26C6C27400ABE408 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		928D2B9B26CAB60F00ABE408 /* LocalNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationView.swift; sourceTree = "<group>"; };
+		928D2B9D26CAC3FB00ABE408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		928D2BA026CACEB700ABE408 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		928D2BA226CC28AD00ABE408 /* URLSessionWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionWithCombine.swift; sourceTree = "<group>"; };
 		92DC16CA26A61D9800DCA9EB /* SwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DC16CD26A61D9800DCA9EB /* SwiftUIPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundApp.swift; sourceTree = "<group>"; };
 		92DC16CF26A61D9800DCA9EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +63,7 @@
 		92DC16F026A6229B00DCA9EB /* CarouselViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewModifier.swift; sourceTree = "<group>"; };
 		92DC16F226A622C600DCA9EB /* InvisibleTappableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvisibleTappableView.swift; sourceTree = "<group>"; };
 		92DC16F426A6230C00DCA9EB /* CustomProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressViewStyle.swift; sourceTree = "<group>"; };
+		92E3CE7326D2898D00627309 /* ScrollViewFixedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewFixedElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,14 @@
 			path = Permissions;
 			sourceTree = "<group>";
 		};
+		928D2B9F26CACEA900ABE408 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				928D2BA026CACEB700ABE408 /* NotificationHandler.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		92DC16C126A61D9800DCA9EB = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +122,7 @@
 		92DC16CC26A61D9800DCA9EB /* SwiftUIPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				928D2B9F26CACEA900ABE408 /* Notifications */,
 				928D2B7B26C6C26B00ABE408 /* Permissions */,
 				928D2B7826C6C0F200ABE408 /* Locations */,
 				92DC16E626A6213E00DCA9EB /* BottomSheetView.swift */,
@@ -118,12 +137,16 @@
 				92DC16E226A61EF100DCA9EB /* SliderView.swift */,
 				92DC16E426A6201B00DCA9EB /* Colors.swift */,
 				92DC16E826A6215800DCA9EB /* NetworkMonitoring.swift */,
+				92E3CE7326D2898D00627309 /* ScrollViewFixedElement.swift */,
 				92DC16EA26A621BB00DCA9EB /* MatchedGeometryEffectAnimation.swift */,
 				92DC16EC26A621F200DCA9EB /* 3DRotationEffectAnimation.swift */,
 				92DC16EE26A6221D00DCA9EB /* PagerView.swift */,
 				92DC16F026A6229B00DCA9EB /* CarouselViewModifier.swift */,
 				92DC16F426A6230C00DCA9EB /* CustomProgressViewStyle.swift */,
 				92DC16F226A622C600DCA9EB /* InvisibleTappableView.swift */,
+				928D2B9B26CAB60F00ABE408 /* LocalNotificationView.swift */,
+				928D2B9D26CAC3FB00ABE408 /* AppDelegate.swift */,
+				928D2BA226CC28AD00ABE408 /* URLSessionWithCombine.swift */,
 			);
 			path = SwiftUIPlayground;
 			sourceTree = "<group>";
@@ -208,6 +231,8 @@
 				928D2B7A26C6C16B00ABE408 /* PermissionsExtensions.swift in Sources */,
 				92DC16E926A6215800DCA9EB /* NetworkMonitoring.swift in Sources */,
 				92DC16ED26A621F200DCA9EB /* 3DRotationEffectAnimation.swift in Sources */,
+				92E3CE7426D2898D00627309 /* ScrollViewFixedElement.swift in Sources */,
+				928D2BA126CACEB700ABE408 /* NotificationHandler.swift in Sources */,
 				92DC16D026A61D9800DCA9EB /* ContentView.swift in Sources */,
 				92DC16E726A6213E00DCA9EB /* BottomSheetView.swift in Sources */,
 				92DC16EF26A6221D00DCA9EB /* PagerView.swift in Sources */,
@@ -216,12 +241,15 @@
 				92DC16E126A61E8A00DCA9EB /* NetworkImage.swift in Sources */,
 				92DC16F126A6229B00DCA9EB /* CarouselViewModifier.swift in Sources */,
 				92DC16E526A6201B00DCA9EB /* Colors.swift in Sources */,
+				928D2BA326CC28AD00ABE408 /* URLSessionWithCombine.swift in Sources */,
 				92DC16DF26A61E5E00DCA9EB /* GradientOnImageView.swift in Sources */,
 				928D2B7D26C6C27400ABE408 /* Permissions.swift in Sources */,
 				92DC16EB26A621BB00DCA9EB /* MatchedGeometryEffectAnimation.swift in Sources */,
 				92DC16E326A61EF100DCA9EB /* SliderView.swift in Sources */,
+				928D2B9C26CAB60F00ABE408 /* LocalNotificationView.swift in Sources */,
 				923D9BE626C0009E0044BF59 /* PermissionsWithCombine.swift in Sources */,
 				92DC16F326A622C600DCA9EB /* InvisibleTappableView.swift in Sources */,
+				928D2B9E26CAC3FB00ABE408 /* AppDelegate.swift in Sources */,
 				92DC16DD26A61DF100DCA9EB /* MapKitSample.swift in Sources */,
 				92DC16CE26A61D9800DCA9EB /* SwiftUIPlaygroundApp.swift in Sources */,
 			);
