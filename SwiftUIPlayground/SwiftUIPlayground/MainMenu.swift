@@ -56,27 +56,32 @@ struct MainMenu: View {
     var body: some View {
         NavigationStack(path: $presentedView) {
 
-            List(ViewsIndex.allCases, id: \.self) { viewIndex in
-                let viewItem = viewIndex.viewForCase()
-                NavigationLink(value: viewIndex) {
-                    HStack {
-                        viewItem.isNew ? Text("🆕") : Text("‣")
-                        
-                        Text(viewItem.label)
+            VStack {
+                List(ViewsIndex.allCases, id: \.self) { viewIndex in
+                    let viewItem = viewIndex.viewForCase()
+                    NavigationLink(value: viewIndex) {
+                        HStack {
+                            viewItem.isNew ? Text("🆕") : Text("‣")
+                            Text(viewItem.label)
+                        }
+                    }
+                }.navigationDestination(for: ViewsIndex.self) { item in
+                    item.viewForCase().view
+                }
+                .navigationTitle(Text("🛝 Swift Playground"))
+                .toolbar {
+                    ToolbarItem {
+                        Button {
+                            presentedView = [ViewsIndex.haptic, ViewsIndex.gradientOnImage]
+                        } label: {
+                            Text("Test Navigation Path")
+                        }
                     }
                 }
-            }.navigationDestination(for: ViewsIndex.self) { item in
-                item.viewForCase().view
-            }
-            .navigationTitle(Text("🛝 Swift Playground"))
-            .toolbar {
-                ToolbarItem {
-                    Button {
-                        presentedView = [ViewsIndex.haptic, ViewsIndex.gradientOnImage]
-                    } label: {
-                        Text("Test Navigation Stack")
-                    }
-                }
+                Text("❇️ This menu use new Navigation Stack from iOS16, you can test the path system by taping on \"Test Navigation Path\" in the toolbar. Checkout the code to see how it works 🤓")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding()
             }
         }
     }
