@@ -104,7 +104,7 @@ struct MapExample3: View {
     var body: some View {
         VStack {
             Map(coordinateRegion: $region, annotationItems: cities) { city in
-                MapPin(coordinate: city.coordinate, tint: .green)
+                MapMarker(coordinate: city.coordinate, tint: .green)
             }
             
             Map(coordinateRegion: $region, annotationItems: cities) { city in

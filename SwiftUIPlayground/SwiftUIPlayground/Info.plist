@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Nous avons besoin de votre location pour vous notifier quand vous êtes prêt d'une oeuvre</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Nous avons besoin de votre location pour vous notifier quand vous êtes prêt d'une oeuvre</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -46,9 +50,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Nous avons besoin de votre location pour vous notifier quand vous êtes prêt d&apos;une oeuvre</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Nous avons besoin de votre location pour vous notifier quand vous êtes prêt d&apos;une oeuvre</string>
 </dict>
 </plist>

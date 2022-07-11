@@ -6,22 +6,19 @@
 //
 
 import SwiftUI
+enum Page {
+    case home, permissions, notification, bottomSheet, scrollView
+}
 
 @main
 struct SwiftUIPlaygroundApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @State var isPermissionPageActive = false
+
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                VStack {
-                    NavigationLink("Permissions", destination:  PermissionsWithCombine())
-                    NavigationLink("Local Notification Tester", destination:  LocalNotificationView())
-                    NavigationLink("Bottom Sheet", destination:  BottomSheetViewSample())
-                    NavigationLink("Scroll View Fixed Element", destination:  ScrollViewFixedElement())
-                }
-            }
-            
+            MainMenu()
         }
     }
 }

@@ -32,11 +32,7 @@ struct ScrollViewWithStatusBar<Content: View> : View{
         self.window = keyWindow
                     self.topPadding = keyWindow?.safeAreaInsets.top ?? 0
         self.bottomPadding = keyWindow?.safeAreaInsets.bottom ?? 0
-        print(self.topPadding);
-    
-        
-    
-        
+        print(self.topPadding)
     }
     
     var body: some View {
@@ -62,15 +58,14 @@ struct ScrollViewWithStatusBar<Content: View> : View{
 struct ScrollViewFixedElement: View {
     var body: some View {
         ScrollViewWithStatusBar {
-            VStack {
-                ForEach(Array.init(repeating: "Hello", count: 30), id: \.self) { content in
-                    HStack {
-                        Image(systemName: "circle.dashed")
-                        Text(content)
-                        Spacer()
-                    }
+            VStack(alignment: .trailing) {
+                ForEach(1..<50) { i in
+                    Label("Row \(i)", systemImage: "\(i).circle.fill")
+                        .frame(minWidth: 0,idealWidth: .infinity, maxWidth: .infinity)
                 }
-            }.padding()
+            }
+            .frame(minWidth: 0, idealWidth: .infinity, maxWidth: .infinity)
+            .padding(.top, 70)
         }
         .navigationBarHidden(true)
         .edgesIgnoringSafeArea(.top)
