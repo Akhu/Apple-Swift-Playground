@@ -16,10 +16,16 @@ struct ViewItem {
 
 
 enum ViewsIndex: CaseIterable {
-    case bottomSheet, sizeClass, haptic, permissions, localNotifications, scrollViewFixedElement, lazyGridViewWithImages, gradientOnImage, animation, mapKit, mapKitLocation, networkMonitor
+    case shareLink, gridView, bottomSheet, sizeClass, haptic, permissions, localNotifications, scrollViewFixedElement, lazyGridViewWithImages, gradientOnImage, animation, mapKit, mapKitLocation, networkMonitor, timerWithProgressBars, observerPattern
     
     func viewForCase() -> ViewItem {
         switch self {
+        case .shareLink:
+            return ViewItem(label: "Share Link", view: AnyView(ShareLinkView()), isNew: true)
+        case .gridView:
+            return ViewItem(label: "GridView", view: AnyView(GridView()), isNew: true)
+        case .timerWithProgressBars:
+            return ViewItem(label: "Progress Bars with Timer", view: AnyView(ProgressBarsView()))
         case .bottomSheet:
             return ViewItem(label: "Bottom Sheet", view: AnyView(iOS16BottomSheet()), isNew: true)
         case .sizeClass:
@@ -44,6 +50,8 @@ enum ViewsIndex: CaseIterable {
             return ViewItem(label: "MapKit with Location", view: AnyView(MapKitWithLocation(annotationsItems: annotationItemsFromRawRegion, selectedItem: .constant(nil))))
         case .networkMonitor:
             return ViewItem(label: "Dynamic Network monitoring", view: AnyView(NetworkMonitorView()))
+        case .observerPattern:
+            return ViewItem(label: "Observer Pattern", view: AnyView(ObserverPattern()))
         }
     }
     
@@ -55,8 +63,12 @@ struct MainMenu: View {
     
     var body: some View {
         NavigationStack(path: $presentedView) {
-
+            
             VStack {
+                Text("❇️ This menu use new Navigation Stack from iOS16, you can test the path system by taping on \"Test Navigation Path\" in the toolbar. Checkout the code to see how it works 🤓")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding()
                 List(ViewsIndex.allCases, id: \.self) { viewIndex in
                     let viewItem = viewIndex.viewForCase()
                     NavigationLink(value: viewIndex) {
@@ -78,10 +90,7 @@ struct MainMenu: View {
                         }
                     }
                 }
-                Text("❇️ This menu use new Navigation Stack from iOS16, you can test the path system by taping on \"Test Navigation Path\" in the toolbar. Checkout the code to see how it works 🤓")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .padding()
+                
             }
         }
     }

@@ -56,16 +56,25 @@ struct ScrollViewWithStatusBar<Content: View> : View{
 
 
 struct ScrollViewFixedElement: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ScrollViewWithStatusBar {
-            VStack(alignment: .trailing) {
+            VStack(alignment: .leading) {
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Back to menu")
+                }
+
                 ForEach(1..<50) { i in
                     Label("Row \(i)", systemImage: "\(i).circle.fill")
-                        .frame(minWidth: 0,idealWidth: .infinity, maxWidth: .infinity)
+                        .frame(minWidth: 0,idealWidth: .infinity, maxWidth: .infinity, alignment: .leading)
+                        
                 }
             }
             .frame(minWidth: 0, idealWidth: .infinity, maxWidth: .infinity)
             .padding(.top, 70)
+            .padding(.horizontal)
         }
         .navigationBarHidden(true)
         .edgesIgnoringSafeArea(.top)

@@ -13,6 +13,9 @@
 		927192E2287625800098AC39 /* VerticalPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927192E1287625800098AC39 /* VerticalPagerView.swift */; };
 		927192E4287873610098AC39 /* ProgressBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927192E3287873610098AC39 /* ProgressBarsView.swift */; };
 		927192E6287C19140098AC39 /* iOS16BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927192E5287C19140098AC39 /* iOS16BottomSheet.swift */; };
+		927192E8287F42730098AC39 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927192E7287F42730098AC39 /* Timer.swift */; };
+		927192EB287FF13C0098AC39 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927192EA287FF13C0098AC39 /* GridView.swift */; };
+		927192F0287FFB640098AC39 /* ShareLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927192EF287FFB640098AC39 /* ShareLinkView.swift */; };
 		928D2B7726C6C08500ABE408 /* MapKitWithLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2B7626C6C08500ABE408 /* MapKitWithLocation.swift */; };
 		928D2B7A26C6C16B00ABE408 /* PermissionsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2B7926C6C16B00ABE408 /* PermissionsExtensions.swift */; };
 		928D2B7D26C6C27400ABE408 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2B7C26C6C27400ABE408 /* Permissions.swift */; };
@@ -29,7 +32,6 @@
 		92DC16DD26A61DF100DCA9EB /* MapKitSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16DC26A61DF100DCA9EB /* MapKitSample.swift */; };
 		92DC16DF26A61E5E00DCA9EB /* GradientOnImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16DE26A61E5E00DCA9EB /* GradientOnImageView.swift */; };
 		92DC16E126A61E8A00DCA9EB /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16E026A61E8A00DCA9EB /* NetworkImage.swift */; };
-		92DC16E326A61EF100DCA9EB /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16E226A61EF100DCA9EB /* SliderView.swift */; };
 		92DC16E526A6201B00DCA9EB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16E426A6201B00DCA9EB /* Colors.swift */; };
 		92DC16E726A6213E00DCA9EB /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16E626A6213E00DCA9EB /* BottomSheetView.swift */; };
 		92DC16E926A6215800DCA9EB /* NetworkMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DC16E826A6215800DCA9EB /* NetworkMonitoring.swift */; };
@@ -62,6 +64,9 @@
 		927192E1287625800098AC39 /* VerticalPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPagerView.swift; sourceTree = "<group>"; };
 		927192E3287873610098AC39 /* ProgressBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarsView.swift; sourceTree = "<group>"; };
 		927192E5287C19140098AC39 /* iOS16BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS16BottomSheet.swift; sourceTree = "<group>"; };
+		927192E7287F42730098AC39 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		927192EA287FF13C0098AC39 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		927192EF287FFB640098AC39 /* ShareLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkView.swift; sourceTree = "<group>"; };
 		928D2B7626C6C08500ABE408 /* MapKitWithLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitWithLocation.swift; sourceTree = "<group>"; };
 		928D2B7926C6C16B00ABE408 /* PermissionsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsExtensions.swift; sourceTree = "<group>"; };
 		928D2B7C26C6C27400ABE408 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
@@ -80,7 +85,6 @@
 		92DC16DC26A61DF100DCA9EB /* MapKitSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitSample.swift; sourceTree = "<group>"; };
 		92DC16DE26A61E5E00DCA9EB /* GradientOnImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientOnImageView.swift; sourceTree = "<group>"; };
 		92DC16E026A61E8A00DCA9EB /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
-		92DC16E226A61EF100DCA9EB /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		92DC16E426A6201B00DCA9EB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		92DC16E626A6213E00DCA9EB /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		92DC16E826A6215800DCA9EB /* NetworkMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitoring.swift; sourceTree = "<group>"; };
@@ -132,6 +136,48 @@
 			path = Scrollables;
 			sourceTree = "<group>";
 		};
+		927192E9287F428C0098AC39 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				927192E7287F42730098AC39 /* Timer.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		927192EC287FF9D10098AC39 /* UISamples */ = {
+			isa = PBXGroup;
+			children = (
+				92DC16F426A6230C00DCA9EB /* CustomProgressViewStyle.swift */,
+				92DC16DE26A61E5E00DCA9EB /* GradientOnImageView.swift */,
+				927192E5287C19140098AC39 /* iOS16BottomSheet.swift */,
+				92DC16F226A622C600DCA9EB /* InvisibleTappableView.swift */,
+				924D788E26EFE5FD0031C283 /* SizeClassView.swift */,
+				927192E3287873610098AC39 /* ProgressBarsView.swift */,
+				927192EA287FF13C0098AC39 /* GridView.swift */,
+				927192EF287FFB640098AC39 /* ShareLinkView.swift */,
+			);
+			path = UISamples;
+			sourceTree = "<group>";
+		};
+		927192ED287FFA0D0098AC39 /* Logic+Tools */ = {
+			isa = PBXGroup;
+			children = (
+				92DC16E826A6215800DCA9EB /* NetworkMonitoring.swift */,
+				928D2BA226CC28AD00ABE408 /* URLSessionWithCombine.swift */,
+				92A0145C270E132500724FB7 /* ObserverPattern.swift */,
+			);
+			path = "Logic+Tools";
+			sourceTree = "<group>";
+		};
+		927192EE287FFA590098AC39 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				92DC16EA26A621BB00DCA9EB /* MatchedGeometryEffectAnimation.swift */,
+				92DC16EC26A621F200DCA9EB /* 3DRotationEffectAnimation.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		928D2B7826C6C0F200ABE408 /* Locations */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +200,7 @@
 		928D2B9F26CACEA900ABE408 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				928D2B9B26CAB60F00ABE408 /* LocalNotificationView.swift */,
 				928D2BA026CACEB700ABE408 /* NotificationHandler.swift */,
 			);
 			path = Notifications;
@@ -178,6 +225,7 @@
 		92DC16CC26A61D9800DCA9EB /* SwiftUIPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				927192E9287F428C0098AC39 /* Helpers */,
 				9204A981284FA7C300A5FF2C /* UnnecessaryNow */,
 				9204A980284FA70200A5FF2C /* WWDC22 */,
 				928D2B9F26CACEA900ABE408 /* Notifications */,
@@ -187,24 +235,14 @@
 				92DC16D126A61D9900DCA9EB /* Assets.xcassets */,
 				92DC16D626A61D9900DCA9EB /* Info.plist */,
 				92DC16D326A61D9900DCA9EB /* Preview Content */,
-				92DC16DE26A61E5E00DCA9EB /* GradientOnImageView.swift */,
-				92DC16E226A61EF100DCA9EB /* SliderView.swift */,
-				92DC16E426A6201B00DCA9EB /* Colors.swift */,
 				927192E0287624A60098AC39 /* Scrollables */,
-				92DC16E826A6215800DCA9EB /* NetworkMonitoring.swift */,
-				92DC16EA26A621BB00DCA9EB /* MatchedGeometryEffectAnimation.swift */,
-				92DC16EC26A621F200DCA9EB /* 3DRotationEffectAnimation.swift */,
-				92DC16F426A6230C00DCA9EB /* CustomProgressViewStyle.swift */,
-				92DC16F226A622C600DCA9EB /* InvisibleTappableView.swift */,
-				928D2B9B26CAB60F00ABE408 /* LocalNotificationView.swift */,
-				928D2B9D26CAC3FB00ABE408 /* AppDelegate.swift */,
-				928D2BA226CC28AD00ABE408 /* URLSessionWithCombine.swift */,
+				927192ED287FFA0D0098AC39 /* Logic+Tools */,
+				927192EE287FFA590098AC39 /* Animation */,
+				927192EC287FF9D10098AC39 /* UISamples */,
+				92DC16E426A6201B00DCA9EB /* Colors.swift */,
 				92A9433B26DB8022003D4C0E /* Haptic.swift */,
-				924D788E26EFE5FD0031C283 /* SizeClassView.swift */,
-				92A0145C270E132500724FB7 /* ObserverPattern.swift */,
+				928D2B9D26CAC3FB00ABE408 /* AppDelegate.swift */,
 				92A68F4E284FAA04007130E8 /* MainMenu.swift */,
-				927192E3287873610098AC39 /* ProgressBarsView.swift */,
-				927192E5287C19140098AC39 /* iOS16BottomSheet.swift */,
 			);
 			path = SwiftUIPlayground;
 			sourceTree = "<group>";
@@ -299,8 +337,10 @@
 				928D2BA126CACEB700ABE408 /* NotificationHandler.swift in Sources */,
 				92A9433C26DB8022003D4C0E /* Haptic.swift in Sources */,
 				92DC16E726A6213E00DCA9EB /* BottomSheetView.swift in Sources */,
+				927192E8287F42730098AC39 /* Timer.swift in Sources */,
 				92DC16EF26A6221D00DCA9EB /* PagerView.swift in Sources */,
 				928D2B7726C6C08500ABE408 /* MapKitWithLocation.swift in Sources */,
+				927192EB287FF13C0098AC39 /* GridView.swift in Sources */,
 				92DC16F526A6230C00DCA9EB /* CustomProgressViewStyle.swift in Sources */,
 				926EDE542861ADA50094F780 /* LazyGridView.swift in Sources */,
 				92DC16E126A61E8A00DCA9EB /* NetworkImage.swift in Sources */,
@@ -310,7 +350,6 @@
 				92DC16DF26A61E5E00DCA9EB /* GradientOnImageView.swift in Sources */,
 				928D2B7D26C6C27400ABE408 /* Permissions.swift in Sources */,
 				92DC16EB26A621BB00DCA9EB /* MatchedGeometryEffectAnimation.swift in Sources */,
-				92DC16E326A61EF100DCA9EB /* SliderView.swift in Sources */,
 				928D2B9C26CAB60F00ABE408 /* LocalNotificationView.swift in Sources */,
 				92A68F4F284FAA04007130E8 /* MainMenu.swift in Sources */,
 				927192E4287873610098AC39 /* ProgressBarsView.swift in Sources */,
@@ -322,6 +361,7 @@
 				928D2B9E26CAC3FB00ABE408 /* AppDelegate.swift in Sources */,
 				92A0145D270E132500724FB7 /* ObserverPattern.swift in Sources */,
 				92DC16DD26A61DF100DCA9EB /* MapKitSample.swift in Sources */,
+				927192F0287FFB640098AC39 /* ShareLinkView.swift in Sources */,
 				92DC16CE26A61D9800DCA9EB /* SwiftUIPlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

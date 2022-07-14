@@ -1,11 +1,11 @@
 //
-//  ProgressBarsView.swift
+//  Timer.swift
 //  SwiftUIPlayground
 //
-//  Created by Anthony Da cruz on 08/07/2022.
+//  Created by Anthony Da cruz on 13/07/2022.
 //
 
-import SwiftUI
+import Foundation
 import Combine
 
 class AnimationProgressTimer: ObservableObject {
@@ -36,7 +36,7 @@ class AnimationProgressTimer: ObservableObject {
                 if self.progress2Value == 1 {
                     return 0
                 }
-                return self.progress2Value + Double.random(in: 0.02...0.1) 
+                return self.progress2Value + Double.random(in: 0.02...0.1)
             })
             .assign(to: \.progress2Value, on: self)
             .store(in: &cancellableSet)
@@ -49,34 +49,5 @@ class AnimationProgressTimer: ObservableObject {
             })
             .assign(to: \.progress1Value, on: self)
             .store(in: &cancellableSet)
-    }
-}
-
-struct ProgressBarsView: View {
-    @StateObject var animationTimer = AnimationProgressTimer()
-    var body: some View {
-        VStack(spacing: 24) {
-            
-                Group {
-                    ProgressView("🦠 Suppression du virus", value: animationTimer.progress1Value)
-                    .font(.headline)
-                    .animation(.easeInOut, value: animationTimer.progress1Value)
-            
-                    ProgressView("🧠 Rééducation du système autonome", value: animationTimer.progress2Value)
-                        .font(.headline)
-                        .animation(.easeInOut, value: animationTimer.progress2Value)
-            }
-            
-        }
-        .padding()
-        .onAppear {
-            animationTimer.start()
-        }
-    }
-}
-
-struct ProgressBarsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProgressBarsView()
     }
 }
