@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921A47F5288ECE69001DDAD0 /* MultiDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A47F4288ECE69001DDAD0 /* MultiDatePickerView.swift */; };
+		921A47F7288ECFD6001DDAD0 /* SearchableScopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A47F6288ECFD6001DDAD0 /* SearchableScopeView.swift */; };
+		921A47F9288ED127001DDAD0 /* searchableInbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 921A47F8288ED127001DDAD0 /* searchableInbox.json */; };
+		921A47FC288ED506001DDAD0 /* BabyLevelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A47FB288ED506001DDAD0 /* BabyLevelGradient.swift */; };
+		921A47FE288EDB77001DDAD0 /* DynamicTypeSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A47FD288EDB77001DDAD0 /* DynamicTypeSizeView.swift */; };
 		923D9BE626C0009E0044BF59 /* PermissionsWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D9BE526C0009E0044BF59 /* PermissionsWithCombine.swift */; };
 		924D788F26EFE5FD0031C283 /* SizeClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D788E26EFE5FD0031C283 /* SizeClassView.swift */; };
 		926EDE542861ADA50094F780 /* LazyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926EDE532861ADA50094F780 /* LazyGridView.swift */; };
@@ -58,6 +63,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		921A47F4288ECE69001DDAD0 /* MultiDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDatePickerView.swift; sourceTree = "<group>"; };
+		921A47F6288ECFD6001DDAD0 /* SearchableScopeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableScopeView.swift; sourceTree = "<group>"; };
+		921A47F8288ED127001DDAD0 /* searchableInbox.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchableInbox.json; sourceTree = "<group>"; };
+		921A47FA288ED155001DDAD0 /* searchableFavorites.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchableFavorites.json; sourceTree = "<group>"; };
+		921A47FB288ED506001DDAD0 /* BabyLevelGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyLevelGradient.swift; sourceTree = "<group>"; };
+		921A47FD288EDB77001DDAD0 /* DynamicTypeSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DynamicTypeSizeView.swift; path = ../../../../../../../Documents/Design/DynamicTypeSizeView.swift; sourceTree = "<group>"; };
 		923D9BE526C0009E0044BF59 /* PermissionsWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsWithCombine.swift; sourceTree = "<group>"; };
 		924D788E26EFE5FD0031C283 /* SizeClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassView.swift; sourceTree = "<group>"; };
 		926EDE532861ADA50094F780 /* LazyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridView.swift; sourceTree = "<group>"; };
@@ -155,6 +166,9 @@
 				927192E3287873610098AC39 /* ProgressBarsView.swift */,
 				927192EA287FF13C0098AC39 /* GridView.swift */,
 				927192EF287FFB640098AC39 /* ShareLinkView.swift */,
+				921A47F4288ECE69001DDAD0 /* MultiDatePickerView.swift */,
+				921A47FB288ED506001DDAD0 /* BabyLevelGradient.swift */,
+				921A47FD288EDB77001DDAD0 /* DynamicTypeSizeView.swift */,
 			);
 			path = UISamples;
 			sourceTree = "<group>";
@@ -165,6 +179,7 @@
 				92DC16E826A6215800DCA9EB /* NetworkMonitoring.swift */,
 				928D2BA226CC28AD00ABE408 /* URLSessionWithCombine.swift */,
 				92A0145C270E132500724FB7 /* ObserverPattern.swift */,
+				921A47F6288ECFD6001DDAD0 /* SearchableScopeView.swift */,
 			);
 			path = "Logic+Tools";
 			sourceTree = "<group>";
@@ -243,6 +258,8 @@
 				92A9433B26DB8022003D4C0E /* Haptic.swift */,
 				928D2B9D26CAC3FB00ABE408 /* AppDelegate.swift */,
 				92A68F4E284FAA04007130E8 /* MainMenu.swift */,
+				921A47F8288ED127001DDAD0 /* searchableInbox.json */,
+				921A47FA288ED155001DDAD0 /* searchableFavorites.json */,
 			);
 			path = SwiftUIPlayground;
 			sourceTree = "<group>";
@@ -318,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921A47F9288ED127001DDAD0 /* searchableInbox.json in Resources */,
 				92DC16D526A61D9900DCA9EB /* Preview Assets.xcassets in Resources */,
 				92DC16D226A61D9900DCA9EB /* Assets.xcassets in Resources */,
 			);
@@ -338,11 +356,13 @@
 				92A9433C26DB8022003D4C0E /* Haptic.swift in Sources */,
 				92DC16E726A6213E00DCA9EB /* BottomSheetView.swift in Sources */,
 				927192E8287F42730098AC39 /* Timer.swift in Sources */,
+				921A47F5288ECE69001DDAD0 /* MultiDatePickerView.swift in Sources */,
 				92DC16EF26A6221D00DCA9EB /* PagerView.swift in Sources */,
 				928D2B7726C6C08500ABE408 /* MapKitWithLocation.swift in Sources */,
 				927192EB287FF13C0098AC39 /* GridView.swift in Sources */,
 				92DC16F526A6230C00DCA9EB /* CustomProgressViewStyle.swift in Sources */,
 				926EDE542861ADA50094F780 /* LazyGridView.swift in Sources */,
+				921A47FC288ED506001DDAD0 /* BabyLevelGradient.swift in Sources */,
 				92DC16E126A61E8A00DCA9EB /* NetworkImage.swift in Sources */,
 				92DC16F126A6229B00DCA9EB /* CarouselViewModifier.swift in Sources */,
 				92DC16E526A6201B00DCA9EB /* Colors.swift in Sources */,
@@ -352,9 +372,11 @@
 				92DC16EB26A621BB00DCA9EB /* MatchedGeometryEffectAnimation.swift in Sources */,
 				928D2B9C26CAB60F00ABE408 /* LocalNotificationView.swift in Sources */,
 				92A68F4F284FAA04007130E8 /* MainMenu.swift in Sources */,
+				921A47FE288EDB77001DDAD0 /* DynamicTypeSizeView.swift in Sources */,
 				927192E4287873610098AC39 /* ProgressBarsView.swift in Sources */,
 				924D788F26EFE5FD0031C283 /* SizeClassView.swift in Sources */,
 				927192E2287625800098AC39 /* VerticalPagerView.swift in Sources */,
+				921A47F7288ECFD6001DDAD0 /* SearchableScopeView.swift in Sources */,
 				923D9BE626C0009E0044BF59 /* PermissionsWithCombine.swift in Sources */,
 				927192E6287C19140098AC39 /* iOS16BottomSheet.swift in Sources */,
 				92DC16F326A622C600DCA9EB /* InvisibleTappableView.swift in Sources */,

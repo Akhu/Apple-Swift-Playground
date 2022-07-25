@@ -9,23 +9,31 @@ import SwiftUI
 
 struct SizeClassView: View {
     @Environment(\.horizontalSizeClass) var sizeClass
-
-    
+    //New in iOS 16 : AnyLayout -> Try on Max devices or iPAD to see it
     
     var body: some View {
-        if sizeClass == .compact {
-            AnyView(HStack {
-                Text("Active size class:")
-                Text("COMPACT")
-            })
-                .font(.largeTitle)
-        } else {
-            AnyView(HStack {
-                Text("Active size class:")
-                Text("REGULAR")
-            })
-            .font(.largeTitle)
+        let layout = sizeClass == .regular ? AnyLayout(HStack()) : AnyLayout(VStack())
+        
+        layout {
+            Text("Change your device orientation (Max iphones and iPad) to see changes")
+                .foregroundColor(.secondary)
+            Image(systemName: "1.circle")
+            Image(systemName: "2.circle")
+            Image(systemName: "3.circle")
+        
+            if sizeClass == .compact {
+               
+                    Text("Active size class:")
+                    Text("COMPACT")
+            } else {
+                    Text("Active size class:")
+                    Text("REGULAR")
+            }
         }
+        .navigationTitle("Any Layout and Size Classes")
+        .font(.largeTitle)
+        
+        
     }
 }
 
