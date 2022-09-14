@@ -14,7 +14,7 @@ struct ViewItem {
 }
 
 enum ViewsIndex: CaseIterable {
-    case dynamicTypeSize, babyGradientAndShadows, searchableScope, multiDatePicker, shareLink, gridView, bottomSheet, sizeClass, haptic, permissions, localNotifications, scrollViewFixedElement, lazyGridViewWithImages, gradientOnImage, animation, mapKit, mapKitLocation, networkMonitor, timerWithProgressBars, observerPattern
+    case dynamicTypeSize, babyGradientAndShadows, multiDatePicker, shareLink, gridView, bottomSheet, sizeClass, haptic, permissions, localNotifications, scrollViewFixedElement, lazyGridViewWithImages, gradientOnImage, animation, mapKit, mapKitLocation, networkMonitor, timerWithProgressBars, observerPattern
     
     func viewForCase() -> ViewItem {
         switch self {
@@ -22,8 +22,8 @@ enum ViewsIndex: CaseIterable {
             return ViewItem(label: "Dynamic Type Size Layout", view: AnyView(DynamicTypeSizeView()), isNew: true)
         case .babyGradientAndShadows:
             return ViewItem(label: "Gradient and Shadows", view: AnyView(BabyLevelGradient()), isNew: true)
-        case .searchableScope:
-            return ViewItem(label: "Searchable Scope", view: AnyView(SearchableScopeView()), isNew: true)
+//        case .searchableScope:
+//            return ViewItem(label: "Searchable Scope", view: AnyView(SearchableScopeView()), isNew: true)
         case .multiDatePicker:
             return ViewItem(label: "Multi Date Picker", view: AnyView(MultiDatePickerView()), isNew: true)
         case .shareLink:
