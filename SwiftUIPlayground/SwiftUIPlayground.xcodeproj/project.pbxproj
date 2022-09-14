@@ -12,6 +12,8 @@
 		921A47F9288ED127001DDAD0 /* searchableInbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 921A47F8288ED127001DDAD0 /* searchableInbox.json */; };
 		921A47FC288ED506001DDAD0 /* BabyLevelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A47FB288ED506001DDAD0 /* BabyLevelGradient.swift */; };
 		921A47FE288EDB77001DDAD0 /* DynamicTypeSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A47FD288EDB77001DDAD0 /* DynamicTypeSizeView.swift */; };
+		921A4801288F056E001DDAD0 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A4800288F056E001DDAD0 /* Particle.swift */; };
+		922E9794289E82D5005F3D68 /* OnboardingPagerFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922E9793289E82D5005F3D68 /* OnboardingPagerFlow.swift */; };
 		923D9BE626C0009E0044BF59 /* PermissionsWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D9BE526C0009E0044BF59 /* PermissionsWithCombine.swift */; };
 		924D788F26EFE5FD0031C283 /* SizeClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D788E26EFE5FD0031C283 /* SizeClassView.swift */; };
 		926EDE542861ADA50094F780 /* LazyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926EDE532861ADA50094F780 /* LazyGridView.swift */; };
@@ -69,6 +71,8 @@
 		921A47FA288ED155001DDAD0 /* searchableFavorites.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchableFavorites.json; sourceTree = "<group>"; };
 		921A47FB288ED506001DDAD0 /* BabyLevelGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyLevelGradient.swift; sourceTree = "<group>"; };
 		921A47FD288EDB77001DDAD0 /* DynamicTypeSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DynamicTypeSizeView.swift; path = ../../../../../../../Documents/Design/DynamicTypeSizeView.swift; sourceTree = "<group>"; };
+		921A4800288F056E001DDAD0 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		922E9793289E82D5005F3D68 /* OnboardingPagerFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPagerFlow.swift; sourceTree = "<group>"; };
 		923D9BE526C0009E0044BF59 /* PermissionsWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsWithCombine.swift; sourceTree = "<group>"; };
 		924D788E26EFE5FD0031C283 /* SizeClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassView.swift; sourceTree = "<group>"; };
 		926EDE532861ADA50094F780 /* LazyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridView.swift; sourceTree = "<group>"; };
@@ -135,6 +139,14 @@
 			path = UnnecessaryNow;
 			sourceTree = "<group>";
 		};
+		921A47FF288F055D001DDAD0 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				921A4800288F056E001DDAD0 /* Particle.swift */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
 		927192E0287624A60098AC39 /* Scrollables */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +181,7 @@
 				921A47F4288ECE69001DDAD0 /* MultiDatePickerView.swift */,
 				921A47FB288ED506001DDAD0 /* BabyLevelGradient.swift */,
 				921A47FD288EDB77001DDAD0 /* DynamicTypeSizeView.swift */,
+				922E9793289E82D5005F3D68 /* OnboardingPagerFlow.swift */,
 			);
 			path = UISamples;
 			sourceTree = "<group>";
@@ -187,6 +200,7 @@
 		927192EE287FFA590098AC39 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				921A47FF288F055D001DDAD0 /* Particles */,
 				92DC16EA26A621BB00DCA9EB /* MatchedGeometryEffectAnimation.swift */,
 				92DC16EC26A621F200DCA9EB /* 3DRotationEffectAnimation.swift */,
 			);
@@ -353,6 +367,7 @@
 				92DC16ED26A621F200DCA9EB /* 3DRotationEffectAnimation.swift in Sources */,
 				92E3CE7426D2898D00627309 /* ScrollViewFixedElement.swift in Sources */,
 				928D2BA126CACEB700ABE408 /* NotificationHandler.swift in Sources */,
+				921A4801288F056E001DDAD0 /* Particle.swift in Sources */,
 				92A9433C26DB8022003D4C0E /* Haptic.swift in Sources */,
 				92DC16E726A6213E00DCA9EB /* BottomSheetView.swift in Sources */,
 				927192E8287F42730098AC39 /* Timer.swift in Sources */,
@@ -371,6 +386,7 @@
 				928D2B7D26C6C27400ABE408 /* Permissions.swift in Sources */,
 				92DC16EB26A621BB00DCA9EB /* MatchedGeometryEffectAnimation.swift in Sources */,
 				928D2B9C26CAB60F00ABE408 /* LocalNotificationView.swift in Sources */,
+				922E9794289E82D5005F3D68 /* OnboardingPagerFlow.swift in Sources */,
 				92A68F4F284FAA04007130E8 /* MainMenu.swift in Sources */,
 				921A47FE288EDB77001DDAD0 /* DynamicTypeSizeView.swift in Sources */,
 				927192E4287873610098AC39 /* ProgressBarsView.swift in Sources */,

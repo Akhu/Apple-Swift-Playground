@@ -12,7 +12,7 @@ struct SizeClassView: View {
     //New in iOS 16 : AnyLayout -> Try on Max devices or iPAD to see it
     
     var body: some View {
-        let layout = sizeClass == .regular ? AnyLayout(HStack()) : AnyLayout(VStack())
+        let layout = sizeClass == .regular ? AnyLayout(_HStackLayout()) : AnyLayout(_VStackLayout())
         
         layout {
             Text("Change your device orientation (Max iphones and iPad) to see changes")

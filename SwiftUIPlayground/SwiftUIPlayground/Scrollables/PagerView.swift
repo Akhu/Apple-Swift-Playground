@@ -55,7 +55,7 @@ struct PagerView<Content: View>: View {
                         Circle()
                             .fill(Color.black)
                             .frame(width: 10, height: 10)
-                            .offset(x: CGFloat(18 * (currentIndex - 1)), y: 0)
+                            .offset(x: CGFloat(18 * (currentIndex - 2)), y: 0)
                     }
                 }
                 .offset(y: 16)
@@ -67,13 +67,16 @@ struct PagerView<Content: View>: View {
 struct PagerTestView: View {
     @State private var currentPage = 0
     var body: some View {
-        PagerView(pageCount: 5, currentIndex: $currentPage) {
-                    Color.blue
-                    Color.red
-                    Color.green
-                    Color.red
-                    Color.green
-                }
+        VStack{
+            Text("\(currentPage)")
+            PagerView(pageCount: 5, currentIndex: $currentPage) {
+                Color.blue
+                Color.red
+                Color.green
+                Color.red
+                Color.green
+            }
+        }
     }
 }
 
