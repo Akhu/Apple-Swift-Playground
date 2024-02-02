@@ -15,7 +15,6 @@ struct SwiftUIPlaygroundApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State var isPermissionPageActive = false
 
-    
     var body: some Scene {
         WindowGroup {
             MainMenu()
