@@ -39,7 +39,7 @@ struct ViewItem {
 }
 
 enum ViewsIndex: CaseIterable {
-    case snowFall, drawingsParticles, swiftData, hackerNewsSample, dynamicTypeSize, babyGradientAndShadows, multiDatePicker, shareLink, gridView, bottomSheet, sizeClass, haptic, permissions, localNotifications, scrollViewFixedElement, lazyGridViewWithImages, gradientOnImage, animation, mapKit, mapKitLocation, networkMonitor, timerWithProgressBars, observerPattern
+    case snowFall, drawingsParticles, swiftData, hackerNewsSample, dynamicTypeSize, babyGradientAndShadows, multiDatePicker, shareLink, gridView, bottomSheet, sizeClass, haptic, permissions, localNotifications, scrollViewFixedElement, lazyGridViewWithImages, gradientOnImage, animation, mapKit, mapKitLocation, networkMonitor, timerWithProgressBars, observerPattern, matchedGeometryEffect, DragNDropDot
     
     var category: MenuCategory {
         switch self {
@@ -89,6 +89,10 @@ enum ViewsIndex: CaseIterable {
             return .uiSamples
         case .observerPattern:
             return .data
+        case .matchedGeometryEffect:
+            return .animation
+        case .DragNDropDot:
+            return .animation
         }
     }
     
@@ -103,9 +107,9 @@ enum ViewsIndex: CaseIterable {
         case .hackerNewsSample:
             return ViewItem(label: "Hacker News API Consumer", view: AnyView(LastHackerNewsView()), category: .data)
         case .dynamicTypeSize:
-            return ViewItem(label: "Dynamic Type Size Layout", view: AnyView(DynamicTypeSizeView()), isNew: true, category: .uiSamples)
+            return ViewItem(label: "Dynamic Type Size Layout", view: AnyView(DynamicTypeSizeView()), category: .uiSamples)
         case .babyGradientAndShadows:
-            return ViewItem(label: "Gradient and Shadows", view: AnyView(BabyLevelGradient()), isNew: true, category: .uiSamples)
+            return ViewItem(label: "Gradient and Shadows", view: AnyView(BabyLevelGradient()), category: .uiSamples)
 //        case .searchableScope:
 //            return ViewItem(label: "Searchable Scope", view: AnyView(SearchableScopeView()), isNew: true)
         case .multiDatePicker:
@@ -113,11 +117,11 @@ enum ViewsIndex: CaseIterable {
         case .shareLink:
             return ViewItem(label: "Share Link", view: AnyView(ShareLinkView()), isNew: true, category: .uiSamples)
         case .gridView:
-            return ViewItem(label: "GridView", view: AnyView(GridView()), isNew: true, category: .uiSamples)
+            return ViewItem(label: "GridView", view: AnyView(GridView()), category: .uiSamples)
         case .timerWithProgressBars:
             return ViewItem(label: "Progress Bars with Timer", view: AnyView(ProgressBarsView()),category: .uiSamples)
         case .bottomSheet:
-            return ViewItem(label: "Bottom Sheet", view: AnyView(iOS16BottomSheet()), isNew: true, category: .uiSamples)
+            return ViewItem(label: "Bottom Sheet", view: AnyView(iOS16BottomSheet()), category: .uiSamples)
         case .sizeClass:
             return ViewItem(label: "Size Class Sample", view: AnyView(SizeClassView()), category: .uiSamples)
         case .haptic:
@@ -133,7 +137,7 @@ enum ViewsIndex: CaseIterable {
         case .gradientOnImage:
             return ViewItem(label: "Gradient on Image", view: AnyView(GradientOnImage()), category: .uiSamples)
         case .animation:
-            return ViewItem(label: "Animation", view: AnyView(AnimationPlayground()), category: .animation)
+            return ViewItem(label: "3D Rotation Effect", view: AnyView(AnimationPlayground()), category: .animation)
         case .mapKit:
             return ViewItem(label: "MapKit", view: AnyView(MapView()), category: .location)
         case .mapKitLocation:
@@ -142,6 +146,10 @@ enum ViewsIndex: CaseIterable {
             return ViewItem(label: "Dynamic Network monitoring", view: AnyView(NetworkMonitorView()), category: .data)
         case .observerPattern:
             return ViewItem(label: "Observer Pattern", view: AnyView(ObserverPattern()), category: .data)
+        case .matchedGeometryEffect:
+            return ViewItem(label: "Animation Transition", view: AnyView(MatchedGeometryEffectAnimation()), category: .animation)
+        case .DragNDropDot:
+            return ViewItem(label: "DragNDrop Dots from Apple", view: AnyView(DragNDropDotsView()), category: .animation)
         }
     }
     

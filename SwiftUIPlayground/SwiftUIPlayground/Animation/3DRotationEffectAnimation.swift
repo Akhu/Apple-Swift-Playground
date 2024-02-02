@@ -42,13 +42,14 @@ struct AnimationPlayground: View {
         }
         .padding(50)
         .background(enabled ? Color.blue : Color.red)
+        .clipShape(RoundedRectangle(cornerRadius: enabled ? 60 : 0))
         .animation(.default)
         .foregroundColor(.white)
         .rotation3DEffect(
             .degrees(animationAmount),
             axis: (x: 0.0, y: 1.0, z: 0.0)
             )
-        .clipShape(RoundedRectangle(cornerRadius: enabled ? 60 : 0))
+        
         .animation(.interpolatingSpring(stiffness: 10, damping: 1))
     }
 }
