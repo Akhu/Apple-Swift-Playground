@@ -12,7 +12,6 @@
 		921A47F7288ECFD6001DDAD0 /* SearchableScopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A47F6288ECFD6001DDAD0 /* SearchableScopeView.swift */; };
 		921A47F9288ED127001DDAD0 /* searchableInbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 921A47F8288ED127001DDAD0 /* searchableInbox.json */; };
 		921A47FC288ED506001DDAD0 /* BabyLevelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A47FB288ED506001DDAD0 /* BabyLevelGradient.swift */; };
-		921A47FE288EDB77001DDAD0 /* DynamicTypeSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A47FD288EDB77001DDAD0 /* DynamicTypeSizeView.swift */; };
 		921A4801288F056E001DDAD0 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A4800288F056E001DDAD0 /* Particle.swift */; };
 		922065C92B5F9DB00028B04D /* SimpleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922065C82B5F9DB00028B04D /* SimpleAnimation.swift */; };
 		922065E72B5FCDD40028B04D /* SwiftDataContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922065E62B5FCDD40028B04D /* SwiftDataContentView.swift */; };
@@ -35,6 +34,7 @@
 		928D2BA126CACEB700ABE408 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2BA026CACEB700ABE408 /* NotificationHandler.swift */; };
 		928D2BA326CC28AD00ABE408 /* URLSessionWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D2BA226CC28AD00ABE408 /* URLSessionWithCombine.swift */; };
 		929130812B6CBE4800278163 /* MetaBallFallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929130802B6CBE4800278163 /* MetaBallFallView.swift */; };
+		929130832B6D434900278163 /* DynamicTypeSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929130822B6D434900278163 /* DynamicTypeSizeView.swift */; };
 		92A0145D270E132500724FB7 /* ObserverPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0145C270E132500724FB7 /* ObserverPattern.swift */; };
 		92A68F4F284FAA04007130E8 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A68F4E284FAA04007130E8 /* MainMenu.swift */; };
 		92A9433C26DB8022003D4C0E /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9433B26DB8022003D4C0E /* Haptic.swift */; };
@@ -79,7 +79,6 @@
 		921A47F8288ED127001DDAD0 /* searchableInbox.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchableInbox.json; sourceTree = "<group>"; };
 		921A47FA288ED155001DDAD0 /* searchableFavorites.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = searchableFavorites.json; sourceTree = "<group>"; };
 		921A47FB288ED506001DDAD0 /* BabyLevelGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyLevelGradient.swift; sourceTree = "<group>"; };
-		921A47FD288EDB77001DDAD0 /* DynamicTypeSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DynamicTypeSizeView.swift; path = ../../../../../../../Documents/Design/DynamicTypeSizeView.swift; sourceTree = "<group>"; };
 		921A4800288F056E001DDAD0 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
 		922065C82B5F9DB00028B04D /* SimpleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimation.swift; sourceTree = "<group>"; };
 		922065E62B5FCDD40028B04D /* SwiftDataContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +101,7 @@
 		928D2BA026CACEB700ABE408 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 		928D2BA226CC28AD00ABE408 /* URLSessionWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionWithCombine.swift; sourceTree = "<group>"; };
 		929130802B6CBE4800278163 /* MetaBallFallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaBallFallView.swift; sourceTree = "<group>"; };
+		929130822B6D434900278163 /* DynamicTypeSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTypeSizeView.swift; sourceTree = "<group>"; };
 		92A0145C270E132500724FB7 /* ObserverPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPattern.swift; sourceTree = "<group>"; };
 		92A68F4E284FAA04007130E8 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		92A9433B26DB8022003D4C0E /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
@@ -186,6 +186,7 @@
 		927192EC287FF9D10098AC39 /* UISamples */ = {
 			isa = PBXGroup;
 			children = (
+				929130822B6D434900278163 /* DynamicTypeSizeView.swift */,
 				92DC16F426A6230C00DCA9EB /* CustomProgressViewStyle.swift */,
 				92DC16DE26A61E5E00DCA9EB /* GradientOnImageView.swift */,
 				927192E5287C19140098AC39 /* iOS16BottomSheet.swift */,
@@ -196,7 +197,6 @@
 				927192EF287FFB640098AC39 /* ShareLinkView.swift */,
 				921A47F4288ECE69001DDAD0 /* MultiDatePickerView.swift */,
 				921A47FB288ED506001DDAD0 /* BabyLevelGradient.swift */,
-				921A47FD288EDB77001DDAD0 /* DynamicTypeSizeView.swift */,
 				922E9793289E82D5005F3D68 /* OnboardingPagerFlow.swift */,
 				92EF14302A59D4F2002D57EF /* ButtonStylesSample.swift */,
 			);
@@ -426,7 +426,7 @@
 				928D2B9C26CAB60F00ABE408 /* LocalNotificationView.swift in Sources */,
 				922E9794289E82D5005F3D68 /* OnboardingPagerFlow.swift in Sources */,
 				92A68F4F284FAA04007130E8 /* MainMenu.swift in Sources */,
-				921A47FE288EDB77001DDAD0 /* DynamicTypeSizeView.swift in Sources */,
+				929130832B6D434900278163 /* DynamicTypeSizeView.swift in Sources */,
 				927192E4287873610098AC39 /* ProgressBarsView.swift in Sources */,
 				924D788F26EFE5FD0031C283 /* SizeClassView.swift in Sources */,
 				927192E2287625800098AC39 /* VerticalPagerView.swift in Sources */,
