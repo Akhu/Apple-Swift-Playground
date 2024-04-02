@@ -22,7 +22,8 @@ struct FlatButtonStyle: ButtonStyle {
     
     func makeBody(configuration: Configuration) -> some View {
         
-        configuration.label
+        configuration
+            .label
             .font(.system(size: 16, weight: .semibold, design: .rounded))
             .foregroundColor(textColor)
             .buttonPadding()

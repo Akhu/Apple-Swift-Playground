@@ -100,6 +100,10 @@ struct MapKitWithLocation: View {
         })
     }
     
+    var isLocationEnabled: Bool {
+        return permissions.locationManager.location != nil
+    }
+    
     func centerRegionOnUser() {
         if permissions.localizationPermissionState != .denied || permissions.localizationPermissionState == .notDetermined {
             userTrackingMode = .follow

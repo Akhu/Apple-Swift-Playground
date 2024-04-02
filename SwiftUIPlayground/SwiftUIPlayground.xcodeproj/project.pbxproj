@@ -20,6 +20,7 @@
 		924689552B63A594002478EC /* DrawingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924689542B63A594002478EC /* DrawingsView.swift */; };
 		924D788F26EFE5FD0031C283 /* SizeClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D788E26EFE5FD0031C283 /* SizeClassView.swift */; };
 		926EDE542861ADA50094F780 /* LazyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926EDE532861ADA50094F780 /* LazyGridView.swift */; };
+		927032E72B73D4ED00EAABE6 /* ObservationFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927032E62B73D4ED00EAABE6 /* ObservationFrameworkView.swift */; };
 		927192E2287625800098AC39 /* VerticalPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927192E1287625800098AC39 /* VerticalPagerView.swift */; };
 		927192E4287873610098AC39 /* ProgressBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927192E3287873610098AC39 /* ProgressBarsView.swift */; };
 		927192E6287C19140098AC39 /* iOS16BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927192E5287C19140098AC39 /* iOS16BottomSheet.swift */; };
@@ -87,6 +88,7 @@
 		924689542B63A594002478EC /* DrawingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingsView.swift; sourceTree = "<group>"; };
 		924D788E26EFE5FD0031C283 /* SizeClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassView.swift; sourceTree = "<group>"; };
 		926EDE532861ADA50094F780 /* LazyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridView.swift; sourceTree = "<group>"; };
+		927032E62B73D4ED00EAABE6 /* ObservationFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationFrameworkView.swift; sourceTree = "<group>"; };
 		927192E1287625800098AC39 /* VerticalPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPagerView.swift; sourceTree = "<group>"; };
 		927192E3287873610098AC39 /* ProgressBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarsView.swift; sourceTree = "<group>"; };
 		927192E5287C19140098AC39 /* iOS16BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS16BottomSheet.swift; sourceTree = "<group>"; };
@@ -161,6 +163,14 @@
 				921A4800288F056E001DDAD0 /* Particle.swift */,
 			);
 			path = Particles;
+			sourceTree = "<group>";
+		};
+		927032E52B73D4DA00EAABE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				927032E62B73D4ED00EAABE6 /* ObservationFrameworkView.swift */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		927192E0287624A60098AC39 /* Scrollables */ = {
@@ -276,6 +286,7 @@
 		92DC16CC26A61D9800DCA9EB /* SwiftUIPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				927032E52B73D4DA00EAABE6 /* Frameworks */,
 				92F0CB8929CA136C0030AC10 /* HackerNews */,
 				927192E9287F428C0098AC39 /* Helpers */,
 				9204A981284FA7C300A5FF2C /* UnnecessaryNow */,
@@ -408,6 +419,7 @@
 				927192E8287F42730098AC39 /* Timer.swift in Sources */,
 				921A47F5288ECE69001DDAD0 /* MultiDatePickerView.swift in Sources */,
 				92DC16EF26A6221D00DCA9EB /* PagerView.swift in Sources */,
+				927032E72B73D4ED00EAABE6 /* ObservationFrameworkView.swift in Sources */,
 				92F0CB8D29CAE77D0030AC10 /* HackerNewsState.swift in Sources */,
 				928D2B7726C6C08500ABE408 /* MapKitWithLocation.swift in Sources */,
 				927192EB287FF13C0098AC39 /* GridView.swift in Sources */,
@@ -573,7 +585,7 @@
 				DEVELOPMENT_TEAM = NY3J9KV3S9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIPlayground/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,7 +610,7 @@
 				DEVELOPMENT_TEAM = NY3J9KV3S9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIPlayground/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

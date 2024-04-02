@@ -25,7 +25,7 @@ class Permissions: NSObject, ObservableObject {
     
     override init() {
         super.init()
-
+        locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = kCLDistanceFilterNone
                 
@@ -95,5 +95,12 @@ class Permissions: NSObject, ObservableObject {
     func askForAllPermissions(){
         self.askForNotificationPermission()
         self.askForLocalizationPermission()
+    }
+}
+
+
+extension Permissions: CLLocationManagerDelegate {
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        loadPermissions()
     }
 }

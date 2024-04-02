@@ -35,7 +35,7 @@ struct PermissionsWithCombine: View {
                 }
             }).onAppear {
                 permissions.loadPermissions()
-        }
+            }
             if permissions.canLaunch {
                 Text("LESSSGGOOOOOOO")
             }
